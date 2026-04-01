@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.24",
+    "lastTouchedAt": "2026-03-29T00:40:23.904Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-29T00:39:54.805Z",
+    "lastRunVersion": "2026.3.24",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "custom-cloud-infini-ai-com": {
+        "baseUrl": "https://cloud.infini-ai.com/maas/coding/v1",
+        "apiKey": "__API_KEY__",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "glm-5",
+            "name": "glm-5 (Custom Provider)",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 131072
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "custom-cloud-infini-ai-com/glm-5"
+      },
+      "models": {
+        "custom-cloud-infini-ai-com/glm-5": {}
+      },
+      "workspace": "/home/pi/.openclaw/workspace"
+    }
+  },
+  "tools": {
+    "profile": "coding"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "channels": {
+    "feishu": {
+      "enabled": true,
+      "appId": "__FEISHU_APP_ID__",
+      "appSecret": "__FEISHU_APP_SECRET__",
+      "connectionMode": "websocket",
+      "domain": "feishu",
+      "groupPolicy": "open",
+      "requireMention": true,
+      "dmPolicy": "open",
+      "allowFrom": [
+        "*"
+      ],
+      "textChunkLimit": 10000
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "787571f4111232926ee5d77a306320b657596a3cb2b97c78"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    }
+  },
+  "plugins": {
+    "entries": {
+      "feishu": {
+        "enabled": true
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "providers": {
+    "custom-cloud-infini-ai-com": {
+      "baseUrl": "https://cloud.infini-ai.com/maas/coding/v1",
+      "apiKey": "__API_KEY__",
+      "api": "openai-completions",
+      "models": [
+        {
+          "id": "glm-5",
+          "name": "glm-5 (Custom Provider)",
+          "reasoning": true,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 200000,
+          "maxTokens": 131072
+        }
+      ]
+    }
+  }
+}
