@@ -51,7 +51,7 @@ git clone https://github.com/zeroherolin/.openclaw.git
 - 创建应用（机器人），获取 **App ID** 和 **App Secret**
 - 按需配置机器人权限并发布应用
 
-### 3) 填写并写入 Key
+### 3) 写入 Key
 
 编辑 `~/.openclaw/install_key.sh`，把以下 3 个占位符替换成你的值：
 

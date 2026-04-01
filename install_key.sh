@@ -5,9 +5,9 @@ ROOT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 MODELS_JSON="$ROOT_DIR/agents/main/agent/models.json"
 OPENCLAW_JSON="$ROOT_DIR/openclaw.json"
 
-API_KEY="__TEST_API_KEY__"
-FEISHU_APP_ID="__TEST_FEISHU_APP_ID__"
-FEISHU_APP_SECRET="__TEST_FEISHU_APP_SECRET__"
+API_KEY="__API_KEY__"
+FEISHU_APP_ID="__FEISHU_APP_ID__"
+FEISHU_APP_SECRET="__FEISHU_APP_SECRET__"
 
 command -v jq >/dev/null 2>&1 || { echo "jq is required"; exit 1; }
 
